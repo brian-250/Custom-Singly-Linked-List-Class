@@ -9,6 +9,7 @@
 template<typename T>
 class SinglyLinkedList {
     public:
+        SinglyLinkedList();
         void pushBack(T data);
         void popBack();
 
