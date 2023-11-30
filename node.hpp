@@ -6,7 +6,7 @@ struct Node {
     Node(T data);
 
     T data_;
-    Node* next_;
+    Node<T>* next_;
 };
 
 #endif
