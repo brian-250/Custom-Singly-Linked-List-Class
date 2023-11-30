@@ -29,7 +29,7 @@ void SinglyLinkedList<T>::pushBack(T data) {
 template<typename T>
 void SinglyLinkedList<T>::popBack() {
    if ((head_ == nullptr) && (tail_ == nullptr)) {
-       std::cout << "SinglyLinkedList is empty!\n";
+       std::cout << "SinglyLinkedList is empty!\n" << "You cannot popBack() anymore nodes\n";
    } else if (head_ == tail_) {
        delete head_;
        head_ = nullptr;
@@ -46,4 +46,15 @@ void SinglyLinkedList<T>::popBack() {
        tmp = nullptr;
        size_--;
    }
+}
+
+template <typename T>
+void SinglyLinkedList<T>::printList() {
+    if ((head_ == nullptr) && (tail_ == nullptr)) {
+        std::cout << "SinglyLinkedList is empty!\n";
+    } else {
+        while (tmp != nullptr) {
+            std::cout << tmp->data_ << '\n';
+        }
+    }
 }
