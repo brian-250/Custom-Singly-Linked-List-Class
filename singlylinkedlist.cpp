@@ -53,6 +53,7 @@ void SinglyLinkedList<T>::printList() {
     if ((head_ == nullptr) && (tail_ == nullptr)) {
         std::cout << "SinglyLinkedList is empty!\n";
     } else {
+        Node<T>* tmp = head_;
         while (tmp != nullptr) {
             std::cout << tmp->data_ << '\n';
         }
