@@ -6,6 +6,11 @@ template<typename T>
 SinglyLinkedList<T>::SinglyLinkedList() : head_(nullptr), tail_(nullptr), size_(0) {}
 
 template<typename T>
+int SinglyLinkedList<T>::size() {
+    return this->size_;
+}
+
+template<typename T>
 void SinglyLinkedList<T>::pushBack(T data) {
    // new_node pointer is initialized to
    // a dynamically allocated Node object
