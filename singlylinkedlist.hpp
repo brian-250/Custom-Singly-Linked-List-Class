@@ -13,6 +13,7 @@ class SinglyLinkedList {
         int size();
         void pushBack(T data);
         void popBack();
+        void printList();
 
     private:
         Node<T>* head_;
