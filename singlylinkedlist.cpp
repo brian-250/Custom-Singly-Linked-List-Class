@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "singlylinkedlist.hpp"
+#include "node.h"
+#include "singlylinkedlist.h"
 
 template<typename T>
 SinglyLinkedList<T>::SinglyLinkedList() : head_(nullptr), tail_(nullptr), size_(0) {}
@@ -56,6 +57,8 @@ void SinglyLinkedList<T>::printList() {
         Node<T>* tmp = head_;
         while (tmp != nullptr) {
             std::cout << tmp->data_ << '\n';
+            // Traverse the SinglyLinkedList
+            tmp = tmp->next_;
         }
     }
 }

@@ -1,4 +1,4 @@
-#include "node.hpp"
+#include "node.h"
 
 template<typename T>
-Node<T>::Node(T data) : data_(data), next_(nullptr) {}
+Node<T>::Node(T data) : data_(data) {}
