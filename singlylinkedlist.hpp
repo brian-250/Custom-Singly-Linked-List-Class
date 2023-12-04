@@ -1,7 +1,7 @@
-#ifndef SINGLYLINKEDLIST_H
-#define SINGLYLINKEDLIST_H
+#ifndef SINGLYLINKEDLIST_HPP
+#define SINGLYLINKEDLIST_HPP
 
-#include "node.h"
+#include "node.hpp"
 
 // template<typename T> is written again to correctly;
 // templated with type paramter T to ensure Node<T> instances
